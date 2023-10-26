@@ -21,14 +21,16 @@ const AboutPage = () => {
         case, this is all still valid logic and something you can reference.
       </p>
       <h4>Considerations/Refactoring:</h4>
-      <p>
+      <p className="aboutPage__p">
         We could have changed the element that is rendered in our routes so that
         "/people" & "/people/peopleId" both render our HomePage. THEN we could
         have called "PeoplePage" inside of HomePage and then get rid of the
         "People" Link in the Header altogether.
       </p>
-      <img src={img1} />
-      <img src={img2} />
+      <p>Current: </p>
+      <img src={img1} alt="code" />
+      <p>Restructured: </p>
+      <img src={img2} alt="code" />
     </div>
   );
 };
