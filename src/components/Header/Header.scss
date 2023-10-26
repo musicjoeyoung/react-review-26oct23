@@ -1,0 +1,11 @@
+.header{
+    background-color: #8bc34a;
+
+    &__ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 1rem;
+        list-style-type: none;
+    }
+}

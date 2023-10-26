@@ -1,0 +1,11 @@
+.personDetailsContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    margin: 0 8rem;
+
+    &__img{
+        width: 25rem;
+    }
+}

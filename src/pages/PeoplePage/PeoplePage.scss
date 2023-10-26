@@ -1,0 +1,20 @@
+.peopleContainer{
+    &__h1{
+        text-align: center;
+    }
+}
+.people{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+
+    &__person{
+        margin: 0 1rem 0 1rem;
+    }
+    &__hidden {
+        display: none
+    }
+
+}

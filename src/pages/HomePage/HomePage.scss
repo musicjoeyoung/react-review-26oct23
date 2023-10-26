@@ -1,0 +1,47 @@
+.homepage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__code{
+        width: 50%;
+        text-align: center;
+        margin-top: 2rem;
+    }
+    &__floatZoom {
+        animation-name: float-zoom;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        display: inline-block;
+      
+        &__h2 {
+          margin-top: 3rem;
+        }
+      }
+      
+      @keyframes float-zoom {
+        0% {
+          transform: scale(1);
+          opacity: 1;
+          transform-origin: center center;
+        }
+        50% {
+          transform: scale(1.5);
+          opacity: 0.5;
+          transform-origin: center center;
+          -webkit-transform: scale(1.5);
+          -moz-transform: scale(1.5);
+          -ms-transform: scale(1.5);
+          -o-transform: scale(1.5);
+        }
+        100% {
+          transform: scale(1);
+          opacity: 1;
+          transform-origin: center center;
+        }
+      }
+
+}
+
