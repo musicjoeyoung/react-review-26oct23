@@ -42,7 +42,7 @@ const PeoplePage = () => {
         console.log(error);
       }
     };
-    getPerson(peopleId);
+    getPerson(peopleId || 3);
   }, [peopleId]);
 
   console.log(person);
@@ -54,7 +54,13 @@ const PeoplePage = () => {
       <section className="people">
         {/* map through our people state (array) and produce JSX elements */}
         {people.map((person) => (
-          <Link to={`/people/${person.id}`} key={person.id}>
+          <Link
+            to={`/people/${person.id}`}
+            key={person.id}
+            className={`people__person ${
+              peopleId === person.id ? "people__hidden" : ""
+            }`}
+          >
             <article>
               <h2>
                 {person.firstName} {person.lastName}
